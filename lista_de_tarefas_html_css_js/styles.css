@@ -1,0 +1,95 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+body{
+  background: url("./imagens/desfoque1.jpg");
+  background-size: cover;
+}
+
+.tarefa-h1{
+  opacity: 1;; /* Fundo preto com 50% de opacidade */
+  color: white; /* Cor do texto branco */
+  width: 500px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0px auto 0;
+  font-size: 50px;
+}
+
+.container {
+  background-color:rgba(0, 0, 0, 0);
+  width: 500px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px auto 0;
+}
+
+.input-task {
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.button-add-task {
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  background-color: #0d1342;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button-add-task:hover {
+  opacity: 0.8;
+}
+
+.button-add-task:active {
+  opacity: 0.6;
+}
+
+.list-tasks {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.task {
+  background-color: #F2F2F2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+img {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+  opacity: 1;
+}
+
+.done {
+  background-color: #8fac55;
+  text-decoration: line-through;
+}
